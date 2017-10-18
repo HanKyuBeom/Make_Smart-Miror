@@ -55,6 +55,7 @@ Smart-Mirror실행
 '#xserver-command=X -s 0 dpms'로 저장합니다.
 
 >스크린 세이버(화면보호기)
+
 'cd /etc/X11/xinit/xinitrc'
 
     sudo nano xinitrc
@@ -70,8 +71,7 @@ Smart-Mirror실행
 
 >기본설정
 
-    /Rasberry Pi Configuration/Set Resolution 
-에서 해상도를 조절
+    '/Rasberry Pi Configuration/Set Resolution' 에서 해상도를 조절
 
 마지막으로 재부팅해주면 적용된다
 
