@@ -27,7 +27,7 @@ Smart-Mirror실행
 '<addr>'python smartmirror.py
 
 화면회전하기
-'<addr>'sudo nano /boot/config.txt
+\'sudo nano /boot/config.txt\'
 
 맨 마지막 줄에 추가하기 0 = 0도, 1 = 90도, 2 = 180도, 3 = 270도
 '<addr>'display_rotate=1
