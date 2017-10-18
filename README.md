@@ -34,6 +34,8 @@ nano로 필요한 부분 수정
 Smart-Mirror실행
 
     python smartmirror.py
+    
+---
 
 >화면회전하기
 
@@ -43,6 +45,7 @@ Smart-Mirror실행
 
     display_rotate=1
 
+---
 ##스크린 보호기 화면 잠금 풀기
 
 >절전 모드 관련
