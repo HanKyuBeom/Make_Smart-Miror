@@ -5,21 +5,21 @@
 
     pi@raspberrypi ~ $ sudo apt-get upgrade
 
-git설치
+>git설치
 
     pi@raspberrypi ~ $ sudo apt-get install git-core
 
-(like https://github.com/HackerHouseYT/Smart-Mirror) 를 설치
+[HackerHouseYT_Smart-Mirror](https://github.com/HackerHouseYT/Smart-Mirror) 를 설치
 
-git에서 다운로드하기
+>git에서 다운로드하기
 
      git clone git@github.com:HackerHouseYT/Smart-Mirror.git
 
-Smart-Mirror파일로 이동
+>Smart-Mirror파일로 이동
 
     cd Smart-Mirror
 
-pip설치
+>pip설치
 
     sudo pip install -r requirements.txt
 
@@ -33,7 +33,7 @@ Smart-Mirror실행
 
     python smartmirror.py
 
-화면회전하기
+>화면회전하기
 
     sudo nano /boot/config.txt
 
@@ -41,30 +41,25 @@ Smart-Mirror실행
 
     display_rotate=1
 
-스크린 보호기 화면 잠금 풀기
+##스크린 보호기 화면 잠금 풀기
 
 >절전 모드 관련
 
     cd /etc/lightdm/lightdm.conf
-
+    
     sudo nano lightdm.conf
 
 80번째 줄에 [SeatDefaults]에서
 
-    #xserver-command=X 를
-    #xserver-command=X -s 0 dpms
-로 저장합니다.
+'#xserver-command=X' 를
+'#xserver-command=X -s 0 dpms'로 저장합니다.
 
 >스크린 세이버(화면보호기)
-
-    cd /etc/X11/xinit/xinitrc
+'cd /etc/X11/xinit/xinitrc'
 
     sudo nano xinitrc
 
-8번째쯤 줄에
-
-    /etc/X11/Xsession
-이 보입니다.
+8번째쯤 줄에 '/etc/X11/Xsession'이 보입니다.
 밑으로 3줄을 추가합니다.
 
     xset s off
@@ -73,7 +68,7 @@ Smart-Mirror실행
 
 저장하고 리부팅합니다.
 
-기본설정
+>기본설정
 
     /Rasberry Pi Configuration/Set Resolution 
 에서 해상도를 조절
