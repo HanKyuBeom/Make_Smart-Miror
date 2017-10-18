@@ -1,5 +1,7 @@
 # Make_Smart-Miror
 
+
+
     pi@raspberrypi ~ $ sudo apt-get update
 
 
@@ -45,9 +47,9 @@ Smart-Mirror실행
 
 >절전 모드 관련
 
-    cd /etc/lightdm/lightdm.conf
-    
-    sudo nano lightdm.conf
+'cd /etc/lightdm/lightdm.conf' 파일을 수정할 겁니다.
+
+    sudo nano lightdm.conf
 
 80번째 줄에 [SeatDefaults]에서
 
@@ -56,7 +58,7 @@ Smart-Mirror실행
 
 >스크린 세이버(화면보호기)
 
-'cd /etc/X11/xinit/xinitrc'
+'cd /etc/X11/xinit/xinitrc'파일을 수정할 겁니다 
 
     sudo nano xinitrc
 
