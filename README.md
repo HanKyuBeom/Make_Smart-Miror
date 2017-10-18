@@ -25,3 +25,14 @@ sudo nano smartmirroor.py
 
 Smart-Mirror실행
 python smartmirror.py
+
+화면회전하기
+sudo nano /boot/config.txt
+
+맨 마지막 줄에 추가하기 0 = 0도, 1 = 90도, 2 = 180도, 3 = 270도
+display_rotate=1
+
+그리고 기본설정/Rasberry Pi Configuration/Set Resolution 에서 해상도를 조절
+
+마지막으로 재부팅해주면 적용된다
+sudo reboot
